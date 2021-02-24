@@ -56,14 +56,15 @@ header {
         {
             display: flex;
             justify-content: center;
+            align-items: center;
         }
 
-        .link
+        .main
         {  
-            width: 70%;
-            border-radius: 26px;
+            border-radius: 30px 30px 30px 30px;
             background-color: $color-secondary;
             margin-top: 30px;
+            width: 60%;          
 
             & h3
             {
@@ -90,6 +91,34 @@ header {
             }
         }
     }
+    nav
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .link
+    {
+        display: flex;
+        justify-content: center;
+        border: 1px solid black;
+        margin: 10px;
+        width: 70%;
+        padding: 20px;
+        border-radius: 20px;
+        background-color: #f2f2f2;
+
+        & i
+        {
+            
+            margin-right: 20px;
+        }
+    }
+    
+
+
+
 
     /*
     .border {

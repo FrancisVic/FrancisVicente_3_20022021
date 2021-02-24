@@ -41,14 +41,15 @@ header .header-content h2 {
 header .header-content .reservez {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-header .header-content .link {
-  width: 70%;
-  border-radius: 26px;
+header .header-content .main {
+  border-radius: 30px 30px 30px 30px;
   background-color: #FF79DA;
   margin-top: 30px;
+  width: 60%;
 }
-header .header-content .link h3 {
+header .header-content .main h3 {
   font-size: 16px;
 }
 header .header-localisation {
@@ -64,6 +65,26 @@ header .header-localisation span {
 }
 header .header-localisation i {
   margin-right: 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  border: 1px solid black;
+  margin: 10px;
+  width: 70%;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+}
+.link i {
+  margin-right: 20px;
 }
 
 /*
