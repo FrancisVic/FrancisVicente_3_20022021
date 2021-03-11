@@ -88,8 +88,9 @@ section {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     background-color: #fff;
-    border: 1px solid green;
     margin-bottom: 20px;
     border-radius: 20px;
     box-shadow: #00000099 2px 2px 2px 2px;
