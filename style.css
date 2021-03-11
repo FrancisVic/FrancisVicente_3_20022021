@@ -166,6 +166,10 @@ nav {
   margin-right: 30px;
   margin-top: 30px;
 }
+#content__bottom .picture .subtitle i:hover {
+  color: #ff79da;
+  font-weight: bold;
+}
 #content__bottom .picture .subtitle i:active {
   transition: transform 1000ms ease-in-out;
   color: #ff79da;

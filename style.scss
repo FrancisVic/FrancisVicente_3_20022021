@@ -182,6 +182,13 @@ nav {
                 margin-right: 30px;
                 margin-top: 30px;
             }
+
+            & i:hover
+            {
+                color: $color-secondary;
+                font-weight: bold;
+            }
+            
             & i:active {
                 transition: transform 1000ms ease-in-out;
                 color: $color-secondary;
