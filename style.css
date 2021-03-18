@@ -56,6 +56,7 @@ header .header__content .main {
   background-color: #ff79da;
   margin-top: 30px;
   width: 60%;
+  box-shadow: 0px 4px 11px -4px black;
 }
 header .header__content .main h3 {
   font-size: 16px;
@@ -89,7 +90,7 @@ nav {
 
 .link {
   display: flex;
-  border: 1px solid black;
+  box-shadow: 0px 1px 11px -4px black;
   margin: 10px;
   padding: 24px 45px;
   padding-left: 26px;
@@ -104,7 +105,7 @@ nav {
   display: flex;
   justify-content: center;
   font-weight: 600;
-  font-size: 11px;
+  font-size: 12px;
 }
 .link__content {
   left: -35px;
@@ -153,10 +154,25 @@ section {
   height: 150px;
   border-radius: 10px 10px 0px 0px;
 }
+#content__bottom .picture .news {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  width: 85%;
+  margin-top: 10px;
+}
+#content__bottom .picture .news span {
+  color: #266826;
+  background-color: #99e2d0;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
 #content__bottom .picture .subtitle {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 10px;
+  padding-bottom: 17px;
+  margin-top: 4px;
 }
 #content__bottom .picture .subtitle i {
   font-size: 18px;
@@ -172,13 +188,13 @@ section {
 #content__bottom .picture .content {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
+  margin-left: 15px;
 }
 #content__bottom .picture .content span {
-  font-size: 11px;
+  font-size: 12px;
 }
 #content__bottom .picture .content h4 {
-  font-size: 11px;
+  font-size: 12px;
   margin-top: 5px;
   margin-bottom: 0px;
 }
@@ -198,7 +214,10 @@ footer .bottom {
   font-size: 11px;
   margin-bottom: 30px;
 }
-
+footer .bottom__container {
+  display: flex;
+  flex-direction: column;
+}
 @media screen and (min-width: 1024px) {
   #container__general {
     display: flex;
