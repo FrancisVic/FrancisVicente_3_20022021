@@ -54,7 +54,7 @@ header .header__content .reservez {
 }
 header .header__content .main {
   border-radius: 30px 30px 30px 30px;
-  background-color: #ff79da;
+  background: linear-gradient(360deg, #ff79da, transparent);
   margin-top: 30px;
   width: 60%;
   box-shadow: 0px 4px 11px -4px black;
@@ -187,7 +187,7 @@ section {
 }
 #content__bottom .picture .subtitle i:active {
   transform: scale(1.5);
-  transition: transform 1000ms ease-in-out;
+  transition: transform 400ms ease-in-out;
   color: #ff79da;
   font-weight: bold;
 }
