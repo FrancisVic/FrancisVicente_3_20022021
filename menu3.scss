@@ -98,12 +98,18 @@ section {
     padding-left: 10px;
     padding-right: 10px;
     height: 80px;
+
+    &__animation {
+        width: 0%;
+        overflow: hidden;
+    }
+
+    &__tarif {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
-.card__tarif {
-    display: flex;
-    justify-content: space-between;
-}
 .tarif {
     font-weight: 600;
 }

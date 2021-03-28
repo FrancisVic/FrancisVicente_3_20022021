@@ -96,7 +96,10 @@ section {
   padding-right: 10px;
   height: 80px;
 }
-
+.card__animation {
+  width: 0%;
+  overflow: hidden;
+}
 .card__tarif {
   display: flex;
   justify-content: space-between;
