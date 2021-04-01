@@ -207,7 +207,7 @@ section {
                 margin-top: 7px;
             }
 
-            & i:hover {
+            & i:active {
                 transform: scale(1.5);
                 transition: transform 400ms ease-in-out;
                 background: linear-gradient($color-primary 10%, $color-secondary 90%);
@@ -217,6 +217,7 @@ section {
                 transform: scale(1.5);
                 
             }
+           
         }
         .content {
             display: flex;
