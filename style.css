@@ -185,7 +185,7 @@ section {
   margin-right: 20px;
   margin-top: 7px;
 }
-#content__bottom .picture .subtitle i:hover {
+#content__bottom .picture .subtitle i:active {
   transform: scale(1.5);
   transition: transform 400ms ease-in-out;
   background: linear-gradient(#9356dc 10%, #ff79da 90%);
@@ -359,7 +359,7 @@ footer {
   flex-direction: column;
   bottom: 0px;
   width: 100%;
-  background-color: #2f2525;
+  background-color: #353535;
 }
 footer .bottom {
   display: flex;
