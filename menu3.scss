@@ -93,9 +93,8 @@ section {
     width: 100%;
     height: 80px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     animation: progress 2s ease-in-out;
+    justify-content: space-between;
 
     @keyframes progress {
         0% {
@@ -120,6 +119,10 @@ section {
 
     &__content {
         padding: 0px 15px;
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
     &__test {
         display: flex;
@@ -141,10 +144,10 @@ section {
         align-items: center;
         justify-content: center;
         transition: width 0.3s ease-in-out;
-        position: absolute;
+        border-radius: 0px 20px 20px 0px;
     }
 
-    &:active > &__animation {
+    &:hover > &__animation {
         width: 30%;
         overflow: visible;
     }
@@ -153,10 +156,6 @@ section {
         display: flex;
         justify-content: space-between;
     }
-}
-
-.tarif {
-    font-weight: 600;
 }
 
 .commander {
