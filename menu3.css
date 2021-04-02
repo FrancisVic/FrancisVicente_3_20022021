@@ -13,7 +13,6 @@ html {
 header {
   display: flex;
   justify-content: center;
-  background-image: url("images/pho3.jpg");
   background-size: cover;
 }
 
@@ -23,6 +22,8 @@ header {
 
 .banner img {
   height: 250px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .container__logo {
