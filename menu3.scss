@@ -14,7 +14,7 @@ $color-tiers: #99e2d0;
     justify-content: center;
 }
 
-header {
+#header__francaise {
     display: flex;
     justify-content: center;
     background-size: cover;
@@ -29,9 +29,8 @@ header {
     width: 100%;
     object-fit: cover;
 }
-.container__logo {
+.container__logoMenu {
     display: flex;
-    width: 100%;
     height: 50px;
     align-items: center;
     justify-content: center;

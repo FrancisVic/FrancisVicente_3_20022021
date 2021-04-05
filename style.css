@@ -185,7 +185,7 @@ section {
   margin-right: 20px;
   margin-top: 7px;
 }
-#content__bottom .picture .subtitle i:active {
+#content__bottom .picture .subtitle i:hover {
   transform: scale(1.5);
   transition: transform 400ms ease-in-out;
   background: linear-gradient(#9356dc 10%, #ff79da 90%);

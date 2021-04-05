@@ -207,7 +207,7 @@ section {
                 margin-top: 7px;
             }
 
-            & i:active {
+            & i:hover {
                 transform: scale(1.5);
                 transition: transform 400ms ease-in-out;
                 background: linear-gradient($color-primary 10%, $color-secondary 90%);
@@ -262,6 +262,7 @@ footer {
             }
         }
     }
+    
 }
 
 @media screen and(min-width:1024px) {
