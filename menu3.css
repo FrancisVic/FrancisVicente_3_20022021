@@ -91,12 +91,17 @@ section {
   animation: progress 2s ease-in-out;
   justify-content: space-between;
 }
+.card i {
+  color: #fff;
+  font-size: 22px;
+}
 @keyframes progress {
   0% {
     opacity: 0;
   }
   20% {
     opacity: 0;
+    margin-top: 30px;
   }
   40% {
     opacity: 0.3;
@@ -117,6 +122,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-overflow: ellipsis;
 }
 .card__test {
   display: flex;
@@ -127,11 +133,12 @@ section {
 .card h4 {
   font-size: 12px;
   margin-top: 0px;
+  text-overflow: ellipsis;
 }
 .card__animation {
   width: 0%;
   overflow: hidden;
-  background-color: green;
+  background-color: #99e2d0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,8 +146,12 @@ section {
   border-radius: 0px 20px 20px 0px;
 }
 .card:hover > .card__animation {
-  width: 30%;
+  width: 40%;
   overflow: visible;
+}
+.card:hover > .card__animation i {
+  transform: rotate(360deg);
+  transition: transform 400ms ease-in-out;
 }
 .cardtarif {
   display: flex;

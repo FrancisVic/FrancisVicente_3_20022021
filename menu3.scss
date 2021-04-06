@@ -93,7 +93,13 @@ section {
     height: 80px;
     display: flex;
     animation: progress 2s ease-in-out;
+
     justify-content: space-between;
+
+    & i {
+        color: #fff;
+        font-size: 22px;
+    }
 
     @keyframes progress {
         0% {
@@ -101,6 +107,7 @@ section {
         }
         20% {
             opacity: 0;
+            margin-top: 30px;
         }
         40% {
             opacity: 0.3;
@@ -122,6 +129,7 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        text-overflow: ellipsis;
     }
     &__test {
         display: flex;
@@ -133,12 +141,13 @@ section {
     h4 {
         font-size: 12px;
         margin-top: 0px;
+        text-overflow: ellipsis
     }
 
     &__animation {
         width: 0%;
         overflow: hidden;
-        background-color: green;
+        background-color: $color-tiers;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -147,8 +156,13 @@ section {
     }
 
     &:hover > &__animation {
-        width: 30%;
+        width: 40%;
         overflow: visible;
+
+        & i {
+            transform: rotate(360deg);
+            transition: transform 400ms ease-in-out;
+        }
     }
 
     &tarif {
