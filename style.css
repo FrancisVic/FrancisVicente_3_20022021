@@ -10,7 +10,6 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px 13px;
 }
 
 header {
@@ -367,6 +366,179 @@ footer .bottom {
   margin-left: 30px;
   color: #fff;
   margin-bottom: 10px;
+}
+
+#bg {
+  background-color: aliceblue;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+}
+
+#header__francaise {
+  display: flex;
+  justify-content: center;
+  background-size: cover;
+}
+
+.banner {
+  background-size: cover;
+}
+
+.banner img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.container__logoMenu {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.container__logoMenu .logo img {
+  width: 170px;
+  height: 20px;
+}
+.container__logoMenu img {
+  width: 100%;
+  object-fit: contain;
+}
+.container__logoMenu .back i {
+  font-size: 20px;
+  color: black;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.content_card span {
+  border-bottom: 2px solid green;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title i {
+  font-size: 25px;
+}
+
+.sectionMenu {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+  border-radius: 30px 30px 0px 0px;
+  z-index: 2;
+  position: relative;
+  top: -30px;
+}
+
+.menu {
+  margin-bottom: 20px;
+  width: 25px;
+  border-bottom: 2px solid green;
+}
+
+.card {
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: #00000099 1px 1px 10px -6px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  animation: progress 2s ease-in-out;
+  justify-content: space-between;
+}
+.card i {
+  color: #fff;
+  font-size: 22px;
+}
+@keyframes progress {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  80% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.card__content {
+  padding: 0px 15px;
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-overflow: ellipsis;
+}
+.card__test {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card span,
+.card h4 {
+  font-size: 12px;
+  margin-top: 0px;
+  text-overflow: ellipsis;
+}
+.card__animation {
+  width: 0%;
+  overflow: hidden;
+  background-color: #99e2d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.3s ease-in-out;
+  border-radius: 0px 20px 20px 0px;
+}
+.card:hover > .card__animation {
+  width: 40%;
+  overflow: visible;
+}
+.card:hover > .card__animation i {
+  transform: rotate(360deg);
+  transition: transform 400ms ease-in-out;
+}
+.cardtarif {
+  display: flex;
+  justify-content: space-between;
+}
+
+.commander {
+  display: flex;
+  justify-content: center;
+}
+.commander .commander__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 25px 25px 25px 25px;
+  height: 60px;
+  width: 70%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #9356dc;
 }
 
 /*
