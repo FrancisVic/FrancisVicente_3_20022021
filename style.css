@@ -242,6 +242,7 @@ footer .bottom .logoFooter {
 }
 footer .bottom img {
   width: 100%;
+  filter: invert(1);
 }
 footer .bottom__content {
   margin-bottom: 5px;
@@ -334,39 +335,39 @@ footer .bottom span {
 }
 
 .card1 {
-  animation-delay: 6s;
+  animation: progress 2s;
 }
 
 .card2 {
-  transition-delay: 3s;
+  animation: progress 3s;
 }
 
 .card3 {
-  transition-delay: 4s;
+  animation: progress 4s;
 }
 
 .card4 {
-  transition-delay: 5s;
+  animation: progress 5s;
 }
 
 .card5 {
-  transition-delay: 6s;
+  animation: progress 6s;
 }
 
 .card6 {
-  transition-delay: 7s;
+  animation: progress 7s;
 }
 
 .card7 {
-  transition-delay: 8s;
+  animation: progress 8s;
 }
 
 .card8 {
-  transition-delay: 9s;
+  animation: progress 9s;
 }
 
 .card9 {
-  transition-delay: 10s;
+  animation: progress 10s;
 }
 
 .card {
@@ -378,11 +379,6 @@ footer .bottom span {
   height: 65px;
   display: flex;
   justify-content: space-between;
-  animation: progress 2s ease-in-out;
-}
-.card i {
-  color: #fff;
-  font-size: 22px;
 }
 @keyframes progress {
   from {
@@ -426,6 +422,10 @@ footer .bottom span {
   justify-content: center;
   transition: width 0.3s ease-in-out;
   border-radius: 0px 15px 15px 0px;
+}
+.card__animation i {
+  color: #fff;
+  font-size: 22px;
 }
 .card:hover > .card__animation {
   width: 25%;
