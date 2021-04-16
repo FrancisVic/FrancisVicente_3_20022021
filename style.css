@@ -202,7 +202,6 @@ section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-  transform: scale(1.5);
 }
 #content__bottom .picture .content {
   display: flex;
@@ -247,6 +246,9 @@ footer .bottom img {
 footer .bottom__content {
   margin-bottom: 5px;
 }
+footer .bottom__content i {
+  width: 20px;
+}
 footer .bottom__container {
   display: flex;
   flex-direction: column;
@@ -283,20 +285,24 @@ footer .bottom span {
 .container__logoMenu {
   display: flex;
   height: 50px;
+  position: relative;
   align-items: center;
+}
+.container__logoMenu .logo {
+  width: 100%;
+  display: flex;
   justify-content: center;
 }
-.container__logoMenu .logo img {
+.container__logoMenu img {
   width: 170px;
   height: 20px;
-}
-.container__logoMenu img {
   width: 100%;
   object-fit: contain;
 }
-.container__logoMenu .back i {
-  font-size: 20px;
-  color: black;
+.container__logoMenu .back {
+  display: flex;
+  position: absolute;
+  margin-left: 16px;
 }
 
 .content {
@@ -519,13 +525,14 @@ footer .bottom span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
     margin: 10px;
-    width: 70%;
     padding: 20px;
     border-radius: 20px;
     background-color: #f2f2f2;
     position: relative;
+  }
+  .link__content {
+    left: -30px;
   }
 
   .link__number span {
@@ -556,11 +563,6 @@ footer .bottom span {
   .picture h4 {
     margin-top: 5px;
     margin-bottom: 3px;
-    text-align: center;
-  }
-  .picture .subtitle {
-    display: flex;
-    flex-direction: column;
   }
 }
 footer {

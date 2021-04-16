@@ -82,9 +82,7 @@ header {
 }
 .commander h3 {
     padding: 0px 40px;
-    
 }
-
 
 .header__localisation {
     display: flex;
@@ -220,7 +218,6 @@ section {
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 font-weight: bold;
-                transform: scale(1.5);
             }
         }
         .content {
@@ -270,6 +267,9 @@ footer {
 
         &__content {
             margin-bottom: 5px;
+            & i {
+                width: 20px;
+            }
         }
 
         &__container {
@@ -310,19 +310,25 @@ footer {
 .container__logoMenu {
     display: flex;
     height: 50px;
+    position: relative;
     align-items: center;
-    justify-content: center;
-    .logo img {
-        width: 170px;
-        height: 20px;
+
+    .logo {
+        width: 100%;
+        display: flex;
+        justify-content: center;
     }
     & img {
+        width: 170px;
+        height: 20px;
         width: 100%;
         object-fit: contain;
     }
-    .back i {
-        font-size: 20px;
-        color: black;
+
+    .back {
+        display: flex;
+        position: absolute;
+        margin-left: 16px;
     }
 }
 
@@ -354,7 +360,6 @@ footer {
     z-index: 2;
     position: relative;
     top: -30px;
-    
 }
 
 .menu {
@@ -399,9 +404,6 @@ footer {
     height: 65px;
     display: flex;
     justify-content: space-between;
-    
-
-   
 
     @keyframes progress {
         from {
@@ -411,7 +413,6 @@ footer {
             opacity: 1;
         }
     }
-
 
     &__content {
         padding: 0px 15px;
@@ -563,13 +564,15 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 1px solid black;
         margin: 10px;
-        width: 70%;
         padding: 20px;
         border-radius: 20px;
         background-color: #f2f2f2;
         position: relative;
+        &__content
+        {
+            left: -30px;
+        }
     }
 
     .link__number span {
@@ -600,12 +603,8 @@ footer {
         & h4 {
             margin-top: 5px;
             margin-bottom: 3px;
-            text-align: center;
         }
-        .subtitle {
-            display: flex;
-            flex-direction: column;
-        }
+
     }
 }
 
