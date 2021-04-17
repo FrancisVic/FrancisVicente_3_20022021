@@ -14,6 +14,20 @@ $color-tiers: #99e2d0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    &.spinner {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 60px;
+        height: 60px;
+        margin-top: -30px;
+        margin-left: -30px;
+        border-radius: 50%;
+        border: 3px solid;
+        border-top-color: blue;
+    }
 }
 
 header {
@@ -73,6 +87,13 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    &:hover {
+        box-shadow: 0px 4px 17px 3px black;
+        transition: all 0.5s;
+        background: linear-gradient(177deg, #ff79daa3, #9356dcb8);
+    }
+
+
     & h3 {
         margin: 0px;
         font-size: 16px;
@@ -569,8 +590,7 @@ footer {
         border-radius: 20px;
         background-color: #f2f2f2;
         position: relative;
-        &__content
-        {
+        &__content {
             left: -30px;
         }
     }
@@ -604,7 +624,6 @@ footer {
             margin-top: 5px;
             margin-bottom: 3px;
         }
-
     }
 }
 
