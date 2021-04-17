@@ -11,21 +11,26 @@ html {
   flex-direction: column;
   align-items: center;
 }
-.container__general.spinner {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 60px;
-  height: 60px;
-  margin-top: -30px;
-  margin-left: -30px;
+
+.loading {
+  width: 80px;
+  height: 80px;
+  border: 10px solid #9356dc;
+  border-top: 10px solid #ff79da;
+  display: flex;
   border-radius: 50%;
-  border: 3px solid;
-  border-top-color: blue;
+  animation: spinner 3s linear;
 }
 
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    border: 10px solid #9356dc;
+  }
+}
 header {
   display: flex;
   flex-direction: column;
@@ -408,6 +413,7 @@ footer .bottom span {
 @keyframes progress {
   from {
     opacity: 0;
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
