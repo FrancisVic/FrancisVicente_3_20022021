@@ -12,21 +12,32 @@ html {
   align-items: center;
 }
 
+#container__load {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 105px;
+  left: 120px;
+}
+#container__load__load::after {
+  content: "";
+}
+
 .loading {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border: 10px solid #9356dc;
   border-top: 10px solid #ff79da;
   display: flex;
   border-radius: 50%;
-  animation: spinner 3s linear;
+  animation: spinner 3s linear infinite;
+}
+.loading::after {
+  content: "";
 }
 
 @keyframes spinner {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
+  to {
     transform: rotate(360deg);
     border: 10px solid #9356dc;
   }
