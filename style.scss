@@ -14,31 +14,50 @@ $color-tiers: #99e2d0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 2;
+    -webkit-animation: home-delay-none 3s linear;
+}
+
+@keyframes home-delay-none {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        animation-delay: 3s;
+        opacity: 0;
+    }
 }
 
 #container__load {
     display: flex;
     justify-content: center;
+    z-index: 1;
     position: absolute;
-    top: 105px;
-    left: 120px;
-    &__load::after {
-        content:'';
+    background-color: #fff;
+    width: 100%;
+    -webkit-animation: 3s endLoading forwards;
+}
+
+@keyframes endLoading {
+    0% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
+
 .loading {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border: 10px solid $color-primary;
     border-top: 10px solid $color-secondary;
     display: flex;
     border-radius: 50%;
     animation: spinner 3s linear infinite;
-
-    &::after
-    {
-        content:'';
-    }
 }
 
 @keyframes spinner {
