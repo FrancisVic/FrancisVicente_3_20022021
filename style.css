@@ -279,6 +279,10 @@ footer {
   height: 140px;
   justify-content: center;
 }
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
 footer .bottom {
   display: flex;
   flex-direction: column;

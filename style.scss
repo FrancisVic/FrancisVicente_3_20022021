@@ -303,7 +303,10 @@ footer {
     background-color: #000000d1;
     height: 140px;
     justify-content: center;
-
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
     .bottom {
         display: flex;
         flex-direction: column;
