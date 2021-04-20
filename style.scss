@@ -91,7 +91,7 @@ header {
     }
 
     .header__content {
-        background-color: rgb(246,246,246);
+        background-color: rgb(246, 246, 246);
         height: 320px;
         justify-content: center;
 
@@ -147,7 +147,7 @@ header {
     align-items: center;
     height: 50px;
     justify-content: center;
-    background-color: rgb(234,234,234);
+    background-color: rgb(234, 234, 234);
     border-top: 4px solid #80808047;
 
     & span {
@@ -161,12 +161,7 @@ header {
 nav {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
     margin-bottom: 40px;
-
-    & h3 {
-        margin-left: 6px;
-    }
 }
 
 .link {
@@ -176,7 +171,7 @@ nav {
     padding: 24px 15px;
     padding-left: 26px;
     border-radius: 20px;
-    background-color: rgb(246,246,246);
+    background-color: rgb(246, 246, 246);
 
     & i {
         font-size: 18px;
@@ -217,8 +212,10 @@ nav {
 }
 
 section {
-    background-color: rgb(246,246,246);
+    background-color: rgb(246, 246, 246);
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 #content__bottom {
@@ -301,7 +298,7 @@ footer {
     flex-direction: column;
     bottom: 0px;
     width: 100%;
-    background-color: rgb(53,53,53);
+    background-color: rgb(53, 53, 53);
     height: 140px;
     justify-content: center;
     a {
@@ -345,7 +342,7 @@ footer {
 }
 
 #bg {
-    background: rgb(246,246,246);
+    background: rgb(246, 246, 246);
 }
 
 .header__logo {
@@ -373,7 +370,6 @@ footer {
     height: 50px;
     position: relative;
     align-items: center;
-   
 
     .logo {
         width: 100%;
@@ -421,7 +417,7 @@ footer {
     z-index: 2;
     position: relative;
     top: -30px;
-    background: rgb(246,246,246);
+    background: rgb(246, 246, 246);
 }
 
 .menu {
@@ -430,7 +426,6 @@ footer {
     border-bottom: 2px solid $color-tiers;
     border-width: 3px;
 }
-
 
 .card1 {
     animation: progress 2s;
@@ -499,7 +494,7 @@ footer {
         margin-top: 0px;
         text-overflow: ellipsis;
         margin-bottom: 5px;
-        .tarif{
+        .tarif {
             font-weight: 600;
         }
     }
@@ -565,7 +560,7 @@ footer {
         }
 
         .header__content {
-            background-color: rgb(246,246,246);
+            background-color: rgb(246, 246, 246);
             height: 320px;
             justify-content: center;
 
@@ -612,6 +607,12 @@ footer {
                 margin-right: 15px;
             }
         }
+    }
+
+    .fonctionnement {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
     }
     nav {
         display: flex;
@@ -682,13 +683,64 @@ footer {
     }
 }
 
-/*
-    .border {
-        border: 3px solid violet;
+@media screen and(min-width:1280px) {
+    nav {
+        display: flex;
+    }
+    .fonctionnement {
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 0px;
     }
 
-    .bb {
-        border: 3px solid blue;
+    .link__container {
+        display: flex;
+
+        .link {
+            padding: 20px 80px;
+            & span {
+                font-size: 15px;
+            }
+            &__content {
+                left: -90px;
+            }
+        }
+    }
+    .button {
+        padding: 17px 112px;
+        & h3 {
+            font-size: 20px;
+        }
+    }
+    .container__content__bottom {
+        flex-direction: column;
+        display: flex;
+    }
+    #content__bottom {
+        flex-direction: row;
+
+        &__bottom__title {
+            display: flex;
+        }
+        .picture {
+            margin: 17px;
+            & img {
+                height: 400px;
+            }
+            .subtitle {
+                padding-bottom: 22px;
+                & .content h4,
+                span {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    section {
+        display: flex;
+        justify-content: center;
+    }
+    .bottom span,a{
+        font-size: 14px;
     }
 }
-*/

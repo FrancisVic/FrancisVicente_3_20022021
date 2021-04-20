@@ -149,11 +149,7 @@ header .header__content a {
 nav {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
   margin-bottom: 40px;
-}
-nav h3 {
-  margin-left: 6px;
 }
 
 .link {
@@ -203,6 +199,8 @@ nav h3 {
 section {
   background-color: #f6f6f6;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 #content__bottom {
@@ -571,6 +569,12 @@ footer .bottom span {
     margin-right: 15px;
   }
 
+  .fonctionnement {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
   nav {
     display: flex;
     flex-direction: column;
@@ -637,15 +641,70 @@ footer .bottom {
   margin-bottom: 10px;
 }
 
-/*
-    .border {
-        border: 3px solid violet;
-    }
+@media screen and (min-width: 1280px) {
+  nav {
+    display: flex;
+  }
 
-    .bb {
-        border: 3px solid blue;
-    }
+  .fonctionnement {
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .link__container {
+    display: flex;
+  }
+  .link__container .link {
+    padding: 20px 80px;
+  }
+  .link__container .link span {
+    font-size: 15px;
+  }
+  .link__container .link__content {
+    left: -90px;
+  }
+
+  .button {
+    padding: 17px 112px;
+  }
+  .button h3 {
+    font-size: 20px;
+  }
+
+  .container__content__bottom {
+    flex-direction: column;
+    display: flex;
+  }
+
+  #content__bottom {
+    flex-direction: row;
+  }
+  #content__bottom__bottom__title {
+    display: flex;
+  }
+  #content__bottom .picture {
+    margin: 17px;
+  }
+  #content__bottom .picture img {
+    height: 400px;
+  }
+  #content__bottom .picture .subtitle {
+    padding-bottom: 22px;
+  }
+  #content__bottom .picture .subtitle .content h4,
+#content__bottom .picture .subtitle span {
+    font-size: 14px;
+  }
+
+  section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bottom span, a {
+    font-size: 14px;
+  }
 }
-*/
 
 /*# sourceMappingURL=style.css.map */
