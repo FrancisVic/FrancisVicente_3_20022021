@@ -466,16 +466,15 @@ footer .bottom span {
   flex-direction: row;
   justify-content: space-between;
 }
+.card .card__test .tarif {
+  font-weight: 600;
+}
 .card span,
 .card h4 {
   font-size: 12px;
   margin-top: 0px;
   text-overflow: ellipsis;
   margin-bottom: 5px;
-}
-.card span .tarif,
-.card h4 .tarif {
-  font-weight: 600;
 }
 .card__animation {
   width: 0%;
