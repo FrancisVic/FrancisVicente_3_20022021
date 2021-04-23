@@ -4,6 +4,7 @@ html {
     margin: 0px;
     padding: 0px;
     font-family: "Roboto", sans-serif;
+    position: relative;
 }
 
 $color-primary: #9356dc;
@@ -16,6 +17,8 @@ $color-tiers: #99e2d0;
     align-items: center;
     z-index: 2;
     -webkit-animation: home-delay-none 3s linear;
+    position: absolute;
+    width: 100%;
 }
 
 @keyframes home-delay-none {
@@ -36,6 +39,8 @@ $color-tiers: #99e2d0;
     background-color: #fff;
     width: 100%;
     -webkit-animation: 3s endLoading forwards;
+    height: 100vh;
+    align-items:center;
 }
 
 @keyframes endLoading {
@@ -58,6 +63,8 @@ $color-tiers: #99e2d0;
     display: flex;
     border-radius: 50%;
     animation: spinner 3s linear infinite;
+    z-index: 2;
+    position: absolute;
 }
 
 @keyframes spinner {
@@ -371,6 +378,9 @@ footer {
     height: 50px;
     position: relative;
     align-items: center;
+    & i {
+        color: black;
+    }
 
     .logo {
         width: 100%;
@@ -722,7 +732,7 @@ footer {
         flex-direction: row;
 
         &__bottom__title {
-            display: flex;
+            margin-left: 12px;
         }
         .picture {
             margin: 17px;

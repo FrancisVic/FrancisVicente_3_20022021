@@ -4,6 +4,7 @@ html {
   margin: 0px;
   padding: 0px;
   font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
 .container__general {
@@ -12,6 +13,8 @@ html {
   align-items: center;
   z-index: 2;
   -webkit-animation: home-delay-none 3s linear;
+  position: absolute;
+  width: 100%;
 }
 
 @keyframes home-delay-none {
@@ -31,6 +34,8 @@ html {
   background-color: #fff;
   width: 100%;
   -webkit-animation: 3s endLoading forwards;
+  height: 100vh;
+  align-items: center;
 }
 
 @keyframes endLoading {
@@ -52,6 +57,8 @@ html {
   display: flex;
   border-radius: 50%;
   animation: spinner 3s linear infinite;
+  z-index: 2;
+  position: absolute;
 }
 
 @keyframes spinner {
@@ -344,6 +351,9 @@ footer .bottom span {
   height: 50px;
   position: relative;
   align-items: center;
+}
+.container__logoMenu i {
+  color: black;
 }
 .container__logoMenu .logo {
   width: 100%;
@@ -681,7 +691,7 @@ footer .bottom {
     flex-direction: row;
   }
   #content__bottom__bottom__title {
-    display: flex;
+    margin-left: 12px;
   }
   #content__bottom .picture {
     margin: 17px;
