@@ -717,12 +717,25 @@ a {
     font-size: 14px;
   }
 
+  .zoneEntree,
+.zonePlat,
+.zoneDessert {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .card {
     height: 90px;
+    width: 30%;
+    justify-content: space-between;
   }
   .card h4,
 .card span {
     font-size: 14px;
+  }
+
+  .cardDesk {
+    width: 24%;
   }
 }
 

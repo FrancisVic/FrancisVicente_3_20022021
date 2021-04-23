@@ -40,7 +40,7 @@ $color-tiers: #99e2d0;
     width: 100%;
     -webkit-animation: 3s endLoading forwards;
     height: 100vh;
-    align-items:center;
+    align-items: center;
 }
 
 @keyframes endLoading {
@@ -534,7 +534,6 @@ footer {
             transition: transform 400ms ease-in-out;
         }
     }
-    
 }
 
 @media screen and(min-width:1024px) {
@@ -757,12 +756,24 @@ footer {
     a {
         font-size: 14px;
     }
+    .zoneEntree,
+    .zonePlat,
+    .zoneDessert {
+        display: flex;
+        justify-content: space-between;
+    }
+    
     .card {
         height: 90px;
+        width: 30%;
+        justify-content: space-between;
+
         & h4,
         span {
             font-size: 14px;
         }
-        
+    }
+    .cardDesk{
+        width: 24%;
     }
 }
